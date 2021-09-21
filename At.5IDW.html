@@ -1,13 +1,223 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
 	<meta charset="utf-8">
-	<title>Atividade 5</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<title>Página Básica</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px){
+        .bd-placeholder-img-lg{
+          font-size: 3.5rem;
+        }
+      }
+
+      #botaodereserva{
+        color: black;
+        background-color: #F0F8FF;
+      }
+
+      #tabela{
+        color: white;
+      }
+
+      .final{
+        text-align: center;
+        color: black;
+      }
+
+      #pesquisa{
+        background-color: #F0F8FF;;
+        color: black;
+      }
+
+      body{
+        background-color: #E0E0F8;
+      }
+
+      header{
+        background-color: lightsteelblue;
+        clear: both;
+      }
+
+      main{
+        clear: both;
+      }
+
+      section{
+        background-color: lightsalmon;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        margin-right: 105px;
+        margin-left: 105px;
+        text-align: center;
+        font-family: 'Be Vietnam Pro', sans-serif;
+      }
+
+      article{
+        padding-top: 15px;
+        padding-right: 15px;
+        padding-left: 15px;
+        font-family: 'Libre Franklin', sans-serif;
+      }
+
+      footer{
+        background-color: gray;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-right: 105px;
+        margin-left: 105px;
+
+      }
+     
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet">
+
 </head>
 <body>
-	<p>Teste 554</p>
-	<p>FINALMENTE</p>
-	<p>Teste 8554</p>
 
+<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+  <header class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="Img/moonlight.png" width="140" height="100"><strong>Moonlight Glamping</strong></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page">Início</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active">Cabanas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active">Casamentos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active">Atividades</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active">Contatos</a>
+        </li>
+        <form class="d-flex">
+          <button class="btn btn-outline-info" type="submit" id="botaodereserva">RESERVE JÁ</button>
+        </form>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="O que você procura?" aria-label="Search">
+        <button class="btn btn-outline-info" type="submit" id="pesquisa">Pesquisar</button>
+      </form>
+    </div>
+  </header>
+</nav>
+
+<main>
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Img/quarto.png" class="d-block w-100" alt="..." width="80" height="400">
+        <div class="carousel-caption d-none d-sm-block">
+          <h5></h5>
+          <p></p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Img/bambi.png" class="d-block w-100" alt="..." width="80" height="400">
+        <div class="carousel-caption d-none d-sm-block">
+          <h5></h5>
+          <p></p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Img/fogo.png" class="d-block w-100" alt="..." width="80" height="400">
+        <div class="carousel-caption d-none d-sm-block">
+          <h5></h5>
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</main>
+
+
+<section>
+  <h1>BEM VINDO AO MOONLIGHT GLAMPING</h1>
+  <article>
+    <p>Idealizado para elevar o espírito e movimentar a leveza do corpo, o Moonlight Glamping combina alta gastronomia com uma carta de vinhos de excelente qualidade, sob uma atmosfera idílica que se expõe num dos lugares mais místicos e mágicos do Brasil.</p>
+    <p>No Moonlight Glamping, você projeta os sonhos e caprichos de uma hospitalidade que o surpreende nos confortáveis e singulares quartos. Obras de de arte e móveis de antiquários que se conjugam com cama super king 2x2.20m, frigobar estilo retrô, ar-condicionado, secador de cabelo, cofre, lençol de algodão egípcio (400 fios), aquecimento de água solar, TV de plasma, serviço de camareira, produtos de banho L’occitane, robe de algodão, chinelo e chuveiro de alta pressão..</p>
+  </article>
+</section>
+
+
+  <!-- FOOTER -->
+<footer class="container">
+  <table class="table table-borderless" id="tabela">
+    <thead>
+      <tr>
+        <th scope="col">Endereço</th>
+        <th scope="col">Contato</th>
+        <th scope="col">Aceitamos</th>
+        <th scope="col">Siga</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Av. Bernardinho de Campos, 98</td>
+        <td>TEL: 033-3333-3333</td>
+        <td>Cartões de débito e crédito</td>
+        <td>Facebook e Instagram</td>
+      </tr>
+      <tr>
+        <td>São Paulo, SP 33333-333</td>
+        <td>Email: moonlight@###.com</td>
+        <td>Pix e dinheiro</td>
+        <td>moonlight.glamping</td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <br>
+</footer>
+<p class="final" class="float-end"><a href="#">Back to top</a></p>
+<p class="final">&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+	
 </body>
 </html>
